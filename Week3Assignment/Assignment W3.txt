@@ -1,0 +1,68 @@
+5 a. char ****k;
+ i) k is a pointer to a pointer to a pointer to a char
+ ii) k is a pointer to a pointer to a pointer to a pointer to a char
+ iii) k is a pointer to a char pointer
+ iv) k is a pointer to a pointer to a char
+
+
+ans-opt 2
+
+
+b. void main()
+{
+int k = 5;
+int *p = &k;
+int **m = &p;
+**m = 6;
+printf("%d\n", k);
+}
+i) 7
+ii) 4
+iii) 6
+iv) Error
+
+
+
+
+
+Ans-opt 3
+
+
+
+6. Choose the correct statement about structures in C program:
+a. Structure elements can be initialized at the time of declaration.
+b. Structure members cannot be initialized at the time of declaration
+c. Only integer members of structure can be initialized at the time of declaration
+d. None of the above
+
+
+Ans-opt b
+
+
+
+
+7. What is the size of a C structure? How the size of a C structure is calculated?
+
+Ans-Size of a C-structure depends upon the data member present in it. If it is a int data type then the size is 4bytes and for the pointer variable again 4bytes.
+So for the structure-
+
+
+
+
+      struct StructureName{
+                  int data;
+                  struct StructureName *next;
+      }
+
+
+
+The size is calculated as 4bytes + 4bytes.
+
+
+
+
+
+
+
+
+
